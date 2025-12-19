@@ -202,7 +202,7 @@ jobs:
           --dataset-name sharegpt \
           --dataset-path /dataset/ShareGPT_V3_unfiltered_cleaned_split.json
 
-  sglang-upstream-test:
+  sglang-srt-backend-test:
     needs: [build-sglang-image, set-test-environment]
     if: success()
     runs-on:
